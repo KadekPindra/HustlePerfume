@@ -1,0 +1,292 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: grey;
+    
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    background-color: black;
+    margin: 0%;
+    height: 80px;
+    position: fixed;
+}
+
+.perfume{
+    color: #CBE354;
+
+}
+
+.hustle{
+    margin-right: 10px;
+    margin-left: 10%;
+    color: white;
+}
+.myname {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 70%;
+    margin-left:0%;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+}
+
+
+.nav{
+    margin: 0%;
+    padding: 0%;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    
+}
+
+.home{ 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.varian{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.tentang{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.tabel{
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.tabel1{
+    width: 44%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tabelfoto1{
+    align-items: center;
+    justify-content: center;
+}
+.foto1{
+    align-content: center;
+    width: 450px;
+    height: auto;
+}
+
+.foto2{
+    width: 450px;
+    height: auto;
+}
+
+.spasi1{
+    width: 100px;
+}
+
+.varian11{
+   font-size: 30px;
+}
+
+.varian12{
+    height: 50px;
+    width: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.varian13{
+    width: 30px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.varian14{
+    height: 30px;
+    border: 2px;
+}
+
+.buy{
+    color: black;
+    text-decoration: none;
+    border: 2px;
+}
+
+.buynow{
+    height: 20px;
+    border: 1px solid black;
+}
+
+.Copyright{
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Slideshow */
+
+.container-slide {
+    background-color: grey;
+    padding: 100px 0 0 0;
+    
+}
+
+/* Slideshow container */
+.content-slide {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+}
+
+.imgslide {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+    width: 600px;
+    height: 400px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: rgb(255, 254, 224);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.pre:hover,
+.next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+}
+
+.text {
+    color: #fafafa;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.content-slide .numberslide {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.page{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* resposive */
+
+@media screen and (max-width: 800px) {
+
+    .content-slide {
+        padding: 8px 50px 12px 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .next {
+        right: 50px;
+        border-radius: 3px 0 0 3px;
+    }
+    
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }    
+    to {
+        opacity: 1;
+    }
+}
+
+.container .page {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.page .dot {
+    justify-content: center ;
+    align-items: center;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 50%;
+}
+
+.page .active,
+.page .dot:hover {
+    justify-content: center;
+    align-items: center;
+    background-color: #ce0000;
+}
+
